@@ -8,7 +8,7 @@
   }
 }
 
-body {
+.wrapper {
   min-height: 100dvh;
   display: flex;
   justify-content: center;
@@ -19,5 +19,11 @@ body {
 .box {
   width: 100px;
   height: 100px;
+  background: yellowgreen;
+}
+
+.box-200 {
+  width: 200px;
+  height: 200px;
   background: yellowgreen;
 }
