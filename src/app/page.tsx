@@ -1,48 +1,7 @@
 import * as motion from 'motion/react-client';
 import Link from 'next/link';
 
-const links = [
-  {
-    href: '/staggered-images',
-    label: 'Staggered images',
-    description: 'Images that display one by one (Stagger effect)'
-  },
-  {
-    href: '/tasks/toggle-square',
-    label: 'Toggle square',
-    description: 'Learning how to animate between two states using useState and animate'
-  },
-  {
-    href: '/tasks/variants-square',
-    label: 'Variants square',
-    description: 'Learning how to define multiple states with variants and combine them with interaction props like whileHover'
-  },
-  {
-    href: '/tasks/staggered-list',
-    label: 'Staggered list',
-    description: 'Learning how to animate multiple children with staggerChildren and delayChildren'
-  },
-  {
-    href: '/tasks/animate-presence-stagger',
-    label: 'AnimatePresence staggered list',
-    description: 'Learning enter/exit animations with AnimatePresence and delayChildren: stagger() including reverse ordering'
-  },
-  {
-    href: '/tasks/hover-tap-card',
-    label: 'Hover & Tap Card',
-    description: 'Learning how to use whileHover and whileTap for interactive animations'
-  },
-  {
-    href: '/tasks/animate-presence-list',
-    label: 'AnimatePresence List',
-    description: 'Learning how to animate adding and removing elements using AnimatePresence'
-  },
-  {
-    href: '/tasks/drag-box',
-    label: 'Draggable Box',
-    description: 'Learning how to use drag and dragConstraints with animate'
-  }
-];
+import { links } from './data/links';
 
 export default function Home() {
   return (

@@ -8,12 +8,15 @@
   }
 }
 
+.wrapper-layout {
+  background: #101010;
+}
+
 .wrapper {
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #101010;
 }
 
 .box {
