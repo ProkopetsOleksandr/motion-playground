@@ -71,7 +71,7 @@ export default function FAQPage() {
                     strokeLinejoin="round"
                     /* только rotate, без layout */
                     animate={{ rotate: isOpen ? 180 : 0 }}
-                    transition={{ type: 'spring', stiffness: 280, damping: 18, mass: 0.5 }}
+                    transition={{ type: 'spring', stiffness: 280, damping: 20 }}
                     className="shrink-0 text-black/80"
                     aria-hidden="true">
                     <polyline points="6 9 12 15 18 9" />
@@ -79,19 +79,9 @@ export default function FAQPage() {
                 </button>
 
                 {/* Обёртка, которая реально меняет высоту. Именно её анимируем через layout */}
-                <motion.div
-                  layout
-                  /* anchor сверху, чтобы рост шёл вниз */
-                  style={{ transformOrigin: 'top left' }}
-                  transition={{ type: 'spring', stiffness: 260, damping: 30, mass: 0.6 }}
-                  className="overflow-hidden">
+                <motion.div layout>
                   {isOpen && (
-                    <motion.p
-                      /* можно и без layout здесь; оставлю для согласованности */
-                      layout
-                      id={`faq-panel-${i}`}
-                      initial={false}
-                      className="mt-2 text-[15px] leading-7 text-black/80">
+                    <motion.p layout id={`faq-panel-${i}`} initial={false} className="mt-2 text-[15px] leading-7 text-black/80">
                       {item.a}
                     </motion.p>
                   )}
