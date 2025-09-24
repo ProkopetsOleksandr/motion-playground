@@ -40,5 +40,10 @@ export const links: LinkItem[] = [
     href: '/tasks/layout-accordion',
     label: 'Layout Accordion',
     description: 'Learning how to use layout animations for auto-height and smooth reflow'
+  },
+  {
+    href: '/tasks/scroll-animations',
+    label: 'Scroll-driven Animations',
+    description: 'Learn useScroll and useTransform for progress bar, hero scaling, and parallax'
   }
 ];
