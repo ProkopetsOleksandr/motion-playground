@@ -45,5 +45,10 @@ export const links: LinkItem[] = [
     href: '/tasks/scroll-animations',
     label: 'Scroll-driven Animations',
     description: 'Learn useScroll and useTransform for progress bar, hero scaling, and parallax'
+  },
+  {
+    href: '/tasks/shared-layout-modal',
+    label: 'Shared Layout Modal',
+    description: 'Morph a card into a centered modal using layoutId and AnimatePresence'
   }
 ];
